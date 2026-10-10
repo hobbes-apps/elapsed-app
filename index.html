@@ -9,11 +9,7 @@
 </head>
 <body>
   <main>
-    <svg class="mark" viewBox="0 0 1024 1024" fill="none" aria-hidden="true">
-      <path d="M688 270H360c-49.7 0-90 40.3-90 90v304c0 49.7 40.3 90 90 90h304c49.7 0 90-40.3 90-90V515" stroke="#1D1D1B" stroke-width="72" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M754 414a176 176 0 0 0-176-176" stroke="#1D1D1B" stroke-width="72" stroke-linecap="round"/>
-      <circle cx="754" cy="414" r="36" fill="#1D1D1B"/>
-    </svg>
+    <img class="mark" src="./mark.svg" alt="" aria-hidden="true">
     <h1>Started</h1>
     <p class="lede">Take a photo, start timing, and see exactly how long it’s been.</p>
     <p class="privacy-note"><strong>Private by design.</strong> Your photos and timing data stay on your device. Started doesn’t upload your personal data.</p>
@@ -23,10 +19,10 @@
     </div>
 
     <h2>How reminders work</h2>
-    <p>Reminders are scheduled locally on your device. Android may ask you to allow notifications, sound, and exact alarms. Started does not save a reminder until those settings can produce a visible, audible notification.</p>
+    <p>Reminders are scheduled locally on your device. On Android, Started checks notification access, whether its reminder channel is enabled, and exact-alarm access before saving. Alarm volume, Do Not Disturb, and device background restrictions can still affect delivery or sound. Try a short reminder on your device before relying on it.</p>
 
     <h2>Your photos</h2>
-    <p>Photos are temporary markers stored in the app’s private storage. Stop an item to remove its photo and timer. Uninstalling Started removes all remaining app data.</p>
+    <p>Photos are temporary markers stored in the app’s private storage. Stopping an item hides it from the active list. Started attempts to delete its photo and record after the undo window; failed cleanup is retried when the app opens again. Uninstalling Started removes all remaining app data.</p>
 
     <h2>Need help?</h2>
     <p>Email <a href="mailto:heely4561@gmail.com">heely4561@gmail.com</a> with your device model, Android version, and a short description of what happened.</p>
